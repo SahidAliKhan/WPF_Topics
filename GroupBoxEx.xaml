@@ -1,0 +1,40 @@
+﻿<Window x:Class="KfcApp2.GroupBoxEx"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KfcApp2"
+        mc:Ignorable="d"
+        Title="GroupBoxEx" Height="450" Width="800">
+    <Grid>
+        <!--<GroupBox Header="Add New User" Margin="15" Padding="15">
+            <StackPanel>
+                <TextBlock>Name:</TextBlock>
+                <TextBox x:Name="nametxt"/>
+                <TextBlock>Email:</TextBlock>
+                <TextBox x:Name="emailtxt"/>
+                <TextBlock>Contact:</TextBlock>
+                <TextBox x:Name="contacttxt"/>
+                <Button Margin="5" Height="25" Width="70">Add User</Button>
+            </StackPanel>
+        </GroupBox>-->
+
+        <GroupBox Margin="10" Padding="10">
+            <GroupBox.Header>
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="30" Width="30" Source="C:\Users\sahid.khan2\source\repos\KfcApp2\Images\kfclogo.jfif"/>
+                    <TextBlock FontWeight="Bold">Add New User</TextBlock>
+                </StackPanel>
+            </GroupBox.Header>
+            <StackPanel>
+                <TextBlock>Name:</TextBlock>
+                <TextBox x:Name="nametxt"/>
+                <TextBlock>Email:</TextBlock>
+                <TextBox x:Name="emailtxt"/>
+                <TextBlock>Contact:</TextBlock>
+                <TextBox x:Name="contacttxt"/>
+                <Button Margin="5" Height="25" Width="70">Add User</Button>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>

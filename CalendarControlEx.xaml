@@ -1,0 +1,32 @@
+﻿<Window x:Class="KfcApp2.CalendarControlEx"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KfcApp2"
+        mc:Ignorable="d"
+        Title="CalendarControlEx" Height="450" Width="800">
+    <!--<Grid>
+        <Calendar/>
+    </Grid>-->
+    <!--<Viewbox Stretch="Fill" StretchDirection="UpOnly">
+        --><!--<Calendar DisplayDate="01.01.2023"/>-->
+        <!--<Calendar SelectionMode="MultipleRange"/>--><!--
+    </Viewbox>-->
+    <StackPanel>
+        <Calendar x:Name="cal1"/>
+        <Calendar x:Name="cal2" SelectionMode="MultipleRange"/>
+        <TextBox Text="{Binding ElementName=cal1, Path=SelectedDate}"/>
+        <ListBox ItemsSource="{Binding ElementName=cal2, Path=SelectedDates}" MinHeight="150"/>
+    </StackPanel>
+    <!--<StackPanel>
+        <Calendar DisplayMode="Year"/>
+    </StackPanel>--><!--
+    <StackPanel>
+        <Calendar SelectionMode="MultipleRange">
+            <Calendar.BlackoutDates>
+                <CalendarDateRange Start="05.03.2024" End="05.15.2024"/>
+            </Calendar.BlackoutDates>
+        </Calendar>
+    </StackPanel>-->
+</Window>

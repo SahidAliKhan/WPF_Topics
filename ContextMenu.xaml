@@ -1,0 +1,26 @@
+﻿<Window x:Class="KfcApp2.ContextMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KfcApp2"
+        mc:Ignorable="d"
+        Title="ContextMenu" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,135,0,10">Type Something here!!!</TextBlock>
+        <RichTextBox Height="100" Width="200" BorderThickness="4" BorderBrush="Black" Background="Lavender">
+            <RichTextBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Cut" Command="Cut"/>
+                    <MenuItem Header="Copy" Command="Copy"/>
+                    <MenuItem Header="Paste" Command="Paste">
+                        <MenuItem.Icon>
+                            <Image Source="C:\Users\sahid.khan2\source\repos\KfcApp2\Images\kfclogo.jfif"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </ContextMenu>
+            </RichTextBox.ContextMenu>
+        </RichTextBox>
+
+    </Grid>
+</Window>

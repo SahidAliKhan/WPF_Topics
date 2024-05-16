@@ -1,0 +1,25 @@
+﻿<Window x:Class="KfcApp2.MessageBoxEx"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KfcApp2"
+        mc:Ignorable="d"
+        Title="MessageBoxEx" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button Content="Open Message Box" Click="Button_Click" Width="120" Height="25"/>
+            <Button Content="Open File Box" Click="OpenDialogBoxEvent"  Width="120" Height="25" Margin="20"/>
+            <Button Content="Save File Box" Click="SaveDialogBoxEvent"  Width="120" Height="25" Margin="0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <TextBox x:Name="ResultOpen" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+</Window>
